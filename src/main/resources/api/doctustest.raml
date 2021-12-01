@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: doctusTest
+description: training
+
+/doctus/demo:
+  get:
+    description: for get demo
+    responses:
+      200:
+        body:
+          application/json:
+            example: {"fname":"ramesh", "lname": "masal"}
+  post:
+    description: for post demo
+    body:
+      application/json:
+        example: {"fname":"ramesh", "lname": "masal"}
+    responses:
+      201:
+        body:
+          application/json:
+            example: {"status":"success"}
